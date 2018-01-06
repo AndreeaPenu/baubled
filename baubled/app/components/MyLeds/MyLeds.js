@@ -1,84 +1,91 @@
-import React from 'react';
-import { AppRegistry, StyleSheet, Text, View, Image, Dimensions, ListView, TouchableHighlight } from 'react-native';
+import React, {Component} from 'react';
+import { AppRegistry, Text, View, StyleSheet, Dimensions, ListView, TouchableHighlight, Button, AsyncStorage, Image} from 'react-native';
+import { ColorPicker } from 'react-native-color-picker';
+
+
+const Picker = () => (
+    <ColorPicker
+      onColorSelected={color => alert(`Color selected: ${color}`)}
+      style={{flex: 1}}
+    />
+  )
 
 export default class MyLeds extends React.Component {
+/*     static navigationOptions = {
+        title: 'Bauble 1',
+    }; */
     constructor(){
         super();
-        const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
         this.state = {
-            ledDataSource: ds
+
         }
-        this.pressRow = this.pressRow.bind(this);
-        this.renderRow = this.renderRow.bind(this);
     }
 
-    componentDidMount(){
-        this.getLeds();
-    }
-
-    componentWillMount(){
-        this.getLeds();
-    }
-
-    getLeds(){
-        let leds = [
-            {text: 'Led1'},
-            {text: 'Led2'},
-            {text: 'Led3'},
-            {text: 'Led4'}
-        ];
-
-        this.setState({
-            ledDataSource: this.state.ledDataSource.cloneWithRows(leds)
-        });
-    }
-
-    pressRow(led){
-        console.log(led);
-    }
-
-    renderRow(led){
+    
+   
+    onPress = () => {
+        let image =  <Image
+            style={styles.onImage}
+            source={require('./on-groen.png')}
+        />;
         return(
-            <TouchableHighlight onPress={()=>{
-                this.pressRow(led);
-            }}>
-                <View style={styles.row}>
-                    <Text style={styles.text}>{led.text}</Text>
-                </View>
+            <TouchableHighlight
+            onPress={this.onPress}
+            >
+                {image}
             </TouchableHighlight>
+
         )
+        
     }
 
     render() {
         return (
-            <View style={styles.screen}>
-                <Text>
-                    MyLeds
-                </Text>
-
-                <ListView dataSource={this.state.ledDataSource} renderRow={this.renderRow}/>
+            <View style={styles.container}>
+                <View style={styles.row}>
+                    
+                        <View style={styles.box}>
+                        <TouchableHighlight
+                        onPress={this.onPress}
+                        >
+                            <Image
+                                style={styles.onImage}
+                                source={require('./on-wit.png')}
+                            />
+                        </TouchableHighlight>
+                        </View>
+                
+                    <View style={styles.box}>
+                        <Picker />
+                    </View>
+                </View>
+                
             </View>
-        );
+        )
     }
 }
 
-AppRegistry.registerComponent('MyLeds',()=>MyLeds);
-
+AppRegistry.registerComponent('Todos',()=>Todos);
 const styles = StyleSheet.create({
-    screen: {
-        backgroundColor: '#b4e5ed',
-        height: Dimensions.get('window').height,
-        width: Dimensions.get('window').width
+    container:{
+        backgroundColor:'#1b2c44',
+        height:Dimensions.get('window').height,
     },
-    row: {
+    row:{
         flexDirection:'row',
-        justifyContent:'center',
-        padding:12,
-        backgroundColor:'#b0d4ff',
-        marginBottom:3
+        height:150
+   },
+   box:{
+        flex:1,
+        backgroundColor:'#2f4463',
+        margin:5,
+        justifyContent:'space-between'
+   },
+    onImage:{
+        alignSelf:'center',
+        marginTop:20,
+        height:100,
+        width:100
+}
 
-    },
-    text: {
-        flex:1
-    }
 })

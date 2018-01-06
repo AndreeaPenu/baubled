@@ -1,7 +1,14 @@
 import React from 'react';
-import { AppRegistry, StyleSheet, Text, View, Image, Dimensions, ListView, TouchableHighlight } from 'react-native';
-
+import {
+    AppRegistry, StyleSheet, Text, View, Image, Dimensions, ListView, TouchableHighlight,
+    Picker
+} from 'react-native';
+// const { navigate } = this.props.navigation;
 export default class MyBaubleds extends React.Component {
+/*     static navigationOptions = {
+        title: 'MyBaubleds',
+    }; */
+
     constructor(){
         super();
         const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
@@ -35,6 +42,7 @@ export default class MyBaubleds extends React.Component {
 
     pressRow(bauble){
         console.log(bauble);
+        navigate('MyLeds');
     }
 
     renderRow(bauble){
