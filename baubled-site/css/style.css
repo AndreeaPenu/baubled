@@ -2,12 +2,12 @@
 body {
   height: 100%;
   font-size: 16px;
-  background: #1D77EF;
+  background: #B4E5ED;
 }
 
 .select-ctr {
   position: absolute;
-  top: 50%;
+  top: 100%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);

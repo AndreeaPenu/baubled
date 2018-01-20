@@ -1,9 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 
-h2 {
+h2, h5 {
     font-family: 'Roboto';
     color: white;
 }
+
+.image{
+  position: absolute;
+  top: 10%;
+  left: 43%;
+}
+.switchIO{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+.color-picker{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+
 .switch {
   position: relative;
   display: inline-block;
