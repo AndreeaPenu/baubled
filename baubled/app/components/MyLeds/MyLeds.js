@@ -9,11 +9,11 @@ const PickerColor = () => (
       style={{flex: 1}}
     />
   )
-
+ const { navigate } = this.props.navigation;
 export default class MyLeds extends React.Component {
-/*      static navigationOptions = {
+      static navigationOptions = {
         title: 'Bauble 1',
-    };  */
+    };  
     constructor(){
         super();
         this.state = {
@@ -33,7 +33,7 @@ export default class MyLeds extends React.Component {
         return (
             <View style={styles.container}>
                 <View style={styles.row}>
-                    
+                        
                         <View style={styles.box}>
                             <Switch
                                 value={this.state.switchValue}

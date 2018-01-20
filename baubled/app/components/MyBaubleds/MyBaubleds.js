@@ -3,11 +3,11 @@ import {
     AppRegistry, StyleSheet, Text, View, Image, Dimensions, ListView, TouchableHighlight,
     Picker
 } from 'react-native';
-// const { navigate } = this.props.navigation;
+ const { navigate } = this.props.navigation;
 export default class MyBaubleds extends React.Component {
-/*     static navigationOptions = {
+    static navigationOptions = {
         title: 'MyBaubleds',
-    }; */
+    }; 
 
     constructor(){
         super();

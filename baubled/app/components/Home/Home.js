@@ -1,7 +1,10 @@
 import React from 'react';
 import {AppRegistry, StyleSheet, Text, View, Image, Dimensions, Button} from 'react-native';
-
+ const { navigate } = this.props.navigation;
 export default class Home extends React.Component {
+         static navigationOptions = {
+        title: 'Home',
+    }; 
     onPress(){
         console.log('My Baubleds is Pressed');
     }
