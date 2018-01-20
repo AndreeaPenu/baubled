@@ -1,25 +1,61 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 
+*{
+  font-family: 'Roboto';
+}
 h2, h5 {
     font-family: 'Roboto';
     color: white;
 }
 
-.image{
+.image {
   position: absolute;
   top: 10%;
   left: 43%;
 }
-.switchIO{
+.switchIO {
   position: absolute;
-  top: 40%;
+  top: 35%;
+  left: 47.5%;
+}
+
+.color-picker {
+  position: absolute;
+  top: 30%;
   left: 40%;
 }
 
-.color-picker{
+#pick-color {
+  background-color:#B71201;
+}
+
+#select-effect {
+  background-color:#42BF9A;
+}
+.btn-danger {
+  background-color:#B71201;
+  border-color:#B71201;
+}
+
+.btn {
+  margin:10px;
+}
+
+.btn-primary {
+  background-color:#42BF9A;
+  border-color:#42BF9A;
+}
+
+.btn-primary:hover {
+  background-color:#4FC9A0;
+  border-color:#4FC9A0;
+}
+
+.terug-knop {  
   position: absolute;
-  top: 40%;
-  left: 50%;
+  top: 10%;
+  left: 30%;
+
 }
 
 .switch {
@@ -56,11 +92,11 @@ h2, h5 {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #28458E;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #28458E;
 }
 
 input:checked + .slider:before {

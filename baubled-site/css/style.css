@@ -2,12 +2,12 @@
 body {
   height: 100%;
   font-size: 16px;
-  background: #B4E5ED;
+  background: #42BF9A;;
 }
 
 .select-ctr {
   position: absolute;
-  top: 100%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -47,7 +47,7 @@ body {
   box-shadow: 0 2px 15px 3px rgba(0, 0, 0, 0.1);
 }
 .select-ctr > div.input.active {
-  color: #1D77EF;
+  color: #42BF9A;
 }
 .select-ctr > div.input-preview {
   color: rgba(255, 255, 255, 0.75);
