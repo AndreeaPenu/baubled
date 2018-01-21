@@ -12,24 +12,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.3.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
-        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-1.3.0_0b65e404897a561633fd6d380fd1cea3435b6643.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Andre\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1_8fc29359d4280f08cfe9d73add9dee371c9048bb.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.3.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -48,30 +30,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_8e42688f27c3a79c569889a3987477356398a443.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Andre\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
         <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_741e00d6ca5d5650c94633a21ec3d32a1e2c3521.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_6186fa5268dddbebd0bd85441880a8c303d95580.jar" />
     </item>
     <item
         is-multidex="false"
@@ -93,12 +57,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.50.3\jars\libs\infer-annotations-4.0.jar"
+        jar="C:\Users\Andre\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_8420b98bbdccdd2733c480c8f90c2dc423b40ca9.jar" />
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\okio-1.13.0_78b1f82be77ddb732bf3d6bd242b416a9b58c571.jar" />
     </item>
     <item
         is-multidex="false"
@@ -111,15 +75,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.3.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
-        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.3.0_7c579857e669f3088f568f4c7ca4e8f16864c5c0.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Andre\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
         jumboMode="false"
         optimize="true"
@@ -129,48 +84,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Andre\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
+        jar="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\exploded-aar\com.polidea.rxandroidble\rxandroidble\1.4.3\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\okio-1.13.0_78b1f82be77ddb732bf3d6bd242b416a9b58c571.jar" />
+        sha1="86d0e4fc4a4ee9e31b6d54ae3a14afe682815f08">
+        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\com.polidea.rxandroidble-rxandroidble-1.4.3_21221401663f4dff650bcc478f8bad56de067604.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Andre\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
+        jar="C:\Users\Andre\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_1e8c9c249eb3ce28683d1baca4b9a28b85978110.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_3033e4091452c2400926443e19b35d6a1a6dfa8c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Andre\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.6.0\3f9b16b774f2c36cfd86dd2053d0b3059531dacc\okhttp-urlconnection-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
-        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.6.0_4b7e3424278e164e584c45cd618d3f4ea861729f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.0.1_2e08c833e28f6b3b19a173f84ccf34486a23280f.jar" />
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_c0385331ea7f69069ba93dfe952ff500fdc013e3.jar" />
     </item>
     <item
         is-multidex="false"
@@ -183,12 +111,147 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\exploded-aar\com.artemzin.rxjava\proguard-rules\1.3.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="615264fe0e8b673e8a6ba5740547a1e86ff8f7a4">
+        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\com.artemzin.rxjava-proguard-rules-1.3.2.0_ccf19d0d08d67db5c0f214b849f72ebba9710597.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.50.3\jars\libs\infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_8420b98bbdccdd2733c480c8f90c2dc423b40ca9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_3033e4091452c2400926443e19b35d6a1a6dfa8c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andre\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_1e8c9c249eb3ce28683d1baca4b9a28b85978110.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.3.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
         <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-1.3.0_7ce2b39bdb835d5793c3d74420e071fe6207cbf6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-1.3.0_0b65e404897a561633fd6d380fd1cea3435b6643.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andre\.gradle\caches\modules-2\files-2.1\com.jakewharton.rxrelay\rxrelay\1.2.0\a53b8b8ef1a5ec8ff75afca24fc689b71892b44f\rxrelay-1.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a53b8b8ef1a5ec8ff75afca24fc689b71892b44f">
+        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\rxrelay-1.2.0_90775d3e15e883e161b24fd884fc80dd2bba030a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_8e42688f27c3a79c569889a3987477356398a443.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_6186fa5268dddbebd0bd85441880a8c303d95580.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andre\.gradle\caches\modules-2\files-2.1\io.reactivex\rxjava\1.3.2\bcc561a84883a9f3f84e209662c4765a0c3dc691\rxjava-1.3.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="bcc561a84883a9f3f84e209662c4765a0c3dc691">
+        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\rxjava-1.3.2_ba37aa3bb10b8225dce5838fd3fab5e89264993b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\exploded-aar\Baubled\react-native-ble-manager\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="352752321f14f153ae0e7e23bf92fca246f54d96">
+        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\Baubled-react-native-ble-manager-unspecified_bfea48bef8a2d2e2d373f02a23c13e3f0b8a9910.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\exploded-aar\Baubled\react-native-ble-plx\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fdc111f5b0e40da60988a54cfb25e1534d3736ee">
+        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\Baubled-react-native-ble-plx-unspecified_9283608ac27646ff207714eec5b25bfe70357067.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.0.1_2e08c833e28f6b3b19a173f84ccf34486a23280f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andre\.gradle\caches\modules-2\files-2.1\com.google.dagger\dagger\2.8\55a1aa1cdcfd06b9950ca856e2bc2790e105146a\dagger-2.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="55a1aa1cdcfd06b9950ca856e2bc2790e105146a">
+        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\dagger-2.8_ca9ea5d973a344a6b1617cec53b2b4910ff9ddb6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.3.0_7c579857e669f3088f568f4c7ca4e8f16864c5c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Andre\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.6.0\3f9b16b774f2c36cfd86dd2053d0b3059531dacc\okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="C:\Users\Andre\Documents\public\webdev\www\react\baubled\react-native\Baubled\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.6.0_4b7e3424278e164e584c45cd618d3f4ea861729f.jar" />
     </item>
 
 </items>

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { AppRegistry, Text, View, StyleSheet, Dimensions, ListView, TouchableHighlight, Button, AsyncStorage, Image, Picker, Switch} from 'react-native';
 import { ColorPicker } from 'react-native-color-picker';
 import { BleManager } from 'react-native-ble-manager';
+import { BleManager } from 'react-native-ble-plx';
 
 
 const PickerColor = () => (
@@ -15,28 +16,47 @@ export default class MyLeds extends React.Component {
 
     constructor(){
         super();
+        //this.manager = new BleManager();
         this.state = {
             switchValue:false,
             effect: 'geen',
             scanning:false,
-            peripherals: new Map(),
+           peripherals: new Map(),
         }
+
     }
 
     componentDidMount(){
-      BleManager.start({showAlert: false}).then(() => {
-        // Success code
-        console.log('Module initialized');
-      });
+        BleManager.start({showAlert: false});
     }
-
+    
+/*     scanAndConnect() {
+        this.manager.startDeviceScan(null, null, (error, device) => {
+            if (error) {
+                // Handle error (scanning will be stopped automatically)
+                return
+            }
+    
+            // Check if it is a device you are looking for based on advertisement data
+            // or other criteria.
+            if (device.name === 'TI BLE Sensor Tag' || 
+                device.name === 'SensorTag') {
+                
+                // Stop scanning as it's not necessary if you are scanning for one device.
+                this.manager.stopDeviceScan();
+    
+                // Proceed with connection.
+            }
+        });
+    }
+ */
     onSwitchChange(value){
         this.setState({
             switchValue:value
         })
     }
 
-    startScan() {
+     startScan() {
       if (!this.state.scanning) {
         this.setState({peripherals: new Map()});
         BleManager.scan([], 3, true).then((results) => {
@@ -45,7 +65,7 @@ export default class MyLeds extends React.Component {
         });
       }
     }
-
+ 
     
 
     render() {
