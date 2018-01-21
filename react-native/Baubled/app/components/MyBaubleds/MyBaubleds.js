@@ -60,9 +60,7 @@ export default class MyBaubleds extends React.Component {
     render() {
         return (
             <View style={styles.screen}>
-                <Text>
-                    MyBaubleds
-                </Text>
+
                 
                 <ListView dataSource={this.state.baubleDataSource} renderRow={this.renderRow}/>
             </View>
@@ -74,7 +72,7 @@ AppRegistry.registerComponent('MyBaubleds',()=>MyBaubleds);
 
 const styles = StyleSheet.create({
     screen: {
-        backgroundColor: '#b4e5ed',
+        backgroundColor: '#1b2c44',
         height: Dimensions.get('window').height,
         width: Dimensions.get('window').width
     },
@@ -82,11 +80,12 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         justifyContent:'center',
         padding:12,
-        backgroundColor:'#b0d4ff',
+        backgroundColor:'#2f4463',
         marginBottom:3
 
     },
     text: {
-        flex:1
+        flex:1,
+        color:'#ffffff'
     }
 })

@@ -81,6 +81,7 @@ export default class MyLeds extends React.Component {
                             <Switch
                                 value={this.state.switchValue}
                                 onValueChange={(value)=>this.onSwitchChange(value)}
+                                style={styles.switch}
                             />
                         </View>
                 
@@ -93,12 +94,12 @@ export default class MyLeds extends React.Component {
                     <View style={styles.box}>
                         <Picker
                             selectedValue={this.state.effect}
-                            onValueChange={(itemValue, itemIndex) => this.setState({effect: itemValue})}>
-                            <Picker.Item label="Geen effect" value="geen" />
-                            <Picker.Item label="Flikkeren" value="flikkeren" />
-                            <Picker.Item label="Traag Flikkeren" value="traag-flikkeren" />
-                            <Picker.Item label="Regenboog" value="regenboog" />
-                            <Picker.Item label="2 Kleuren" value="2kleuren" />
+                            onValueChange={(itemValue, itemIndex) => this.setState({effect: itemValue})}
+                            style={styles.picker}>
+                            <Picker.Item label="NO EFFECT" value="no-effect" />
+                            <Picker.Item label="FLASH" value="flash" />
+                            <Picker.Item label="RAINBOW" value="rainbow" />
+                            <Picker.Item label="2 COLORS" value="2colors" />
                         </Picker>
                     </View>
                 </View>
@@ -135,6 +136,16 @@ const styles = StyleSheet.create({
         marginTop:20,
         height:100,
         width:100
-}
+    },
+    switch:{
+        marginTop:50,
+        alignSelf:'center'
+    },
+    picker:{
+        color:'#ffffff',
+        marginTop:50,
+        marginLeft:20
+    }
+
 
 })
