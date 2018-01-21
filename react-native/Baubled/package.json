@@ -21,6 +21,7 @@
     "react-native": "0.50.3",
     "react-native-ble-manager": "^6.2.6",
     "react-native-ble-plx": "^0.8.0",
-    "react-native-color-picker": "^0.4.0"
+    "react-native-color-picker": "^0.4.0",
+    "react-navigation": "^1.0.0-beta.27"
   }
 }
