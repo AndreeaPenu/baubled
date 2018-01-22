@@ -20,7 +20,7 @@
   <!-- photo -->
   <img class="image" src="img/bauble-darkblue.png" alt="" width="205" height="194">
 
-  <form method="post" action="control.php" id="baubled-form">
+  <form method="POST" action="control.php" id="baubled-form">
 
     <!-- Switch -->
     <div class="switchIO">
@@ -67,7 +67,7 @@
         e.preventDefault();
 
           $.ajax({
-            type: 'post',
+            type: 'POST',
             url: 'control.php',
             data: $('#baubled-form').serialize(),
             success: function () {
