@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { AppRegistry, Text, View, StyleSheet, Dimensions, ListView, TouchableHighlight, Button, AsyncStorage, Image, Picker, Switch} from 'react-native';
 import { ColorPicker } from 'react-native-color-picker';
-//import { BleManager } from 'react-native-ble-manager';
+import { BleManager } from 'react-native-ble-manager';
 //import { BleManager } from 'react-native-ble-plx';
 import { StackNavigator } from 'react-navigation';
   
@@ -25,13 +25,13 @@ export default class MyLeds extends React.Component {
             switchValue:false,
             effect: 'geen',
             //scanning:false,
-            //peripherals: new Map(),
+           // peripherals: new Map(),
         }
 
     }
 
     componentDidMount(){
-      //BleManager.start({showAlert: false});
+      BleManager.start({showAlert: false});
     }
     
 /*     scanAndConnect() {
