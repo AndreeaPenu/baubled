@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from neopixel import *
 import _rpi_ws281x as ws
 import time
