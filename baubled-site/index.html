@@ -33,9 +33,9 @@
 
     <!-- color picker -->
    <div class="color-picker">
-      <form>
+     <!--  <form>-->
         <input type="text" id="color" name="color" value="#123456" />
-      </form>
+     <!--  </form>-->
       <div id="colorpicker"></div>
     </div>
 
@@ -79,7 +79,11 @@
             success: function () {
               alert('form was submitted');
               console.log($('#baubled-form'));
-            }
+            },
+            error: function(){
+            alert('werkt nie');
+            console.log($('#baubled-form'));
+          }
           });
 
         });
