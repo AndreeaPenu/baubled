@@ -8,10 +8,6 @@ $(document).ready(function() {
     alpha: 0
   });
 
-
-  //color picker
-  $('#colorpicker').farbtastic('#color');
-
   inputPreview.on("click", function(){
     
     var that = $(this);
@@ -88,7 +84,7 @@ $(document).ready(function() {
   });
   
   // copy
-  balapaCop("Select Input Interaction", "rgba(255,255,255,.5)");
+ // balapaCop("Select Input Interaction", "rgba(255,255,255,.5)");
 });
 
 /**

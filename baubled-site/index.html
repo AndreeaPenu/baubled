@@ -24,7 +24,7 @@
 
     <!-- Switch -->
     <div class="switchIO">
-      <h5>AAN/UIT</h5>
+      <h5>UIT/AAN</h5>
       <label class="switch">
               <input type="checkbox" name="checkbox">
               <span class="slider round"></span>
@@ -32,7 +32,7 @@
     </div>
 
     <!-- color picker -->
-    <div class="color-picker">
+   <div class="color-picker">
       <form>
         <input type="text" id="color" name="color" value="#123456" />
       </form>
@@ -49,10 +49,10 @@
       <div class='input input-5' data-val='2kleuren' name="effect5">2 Kleuren</div>
     </div>
 
-    <input type="submit" name="submit" class="btn-submit" value="Set leds">
+    <input type="submit" name="submit" class="btn-submit btn btn-light" value="Uitvoeren">
   </form>
 
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>  
   <script type="text/javascript" src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
   <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/TextPlugin.min.js'></script>
   <script type="text/javascript" src='https://codepen.io/balapa/pen/c58fffe58d661ae3d4b168a43eb3b2b8.js'></script>
@@ -64,16 +64,21 @@
 
     $(document).ready(function() {
 
+      //color picker
+      $('#colorpicker').farbtastic('#color');
+
       $('#baubled-form').on('submit', function (e) {
 
         e.preventDefault();
 
           $.ajax({
+            cache: false,
             type: 'POST',
-            url: 'control.php',
+            url: '/control.php',
             data: $('#baubled-form').serialize(),
             success: function () {
               alert('form was submitted');
+              console.log($('#baubled-form'));
             }
           });
 
