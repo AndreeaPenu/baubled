@@ -1,122 +1,80 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Signin Template for Bootstrap</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../../../favicon.ico">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <title>Baubled</title>
 
-    <!-- Custom style -->
-    <link rel="stylesheet" href="css/custom.css">
-  </head>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <body class="text-center">
-  
-      <?php
+  <!-- Custom style -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
 
-        if (isset($_POST['checkbox']) && $_POST['checkbox'] == 'true'){
-          exec("sudo python lichtaan.py ");
-        
-        }else{
-          exec("sudo python lichtuit.py ");
-        }
-        
-        if (isset($_POST['color'])){
-          exec("sudo python ");
-        }
+<body class="text-center">
+  <img class="image" src="img/bauble-darkblue.png" alt="" width="205" height="194">
+  <form method="POST" action='control.php'>
+    <!-- photo -->
 
-        if (isset($POST['effect1'])){
-          exec("sudo python ");
-        }
-
-        if (isset($POST['effect2'])){
-          exec("sudo python ");
-        }
-        if (isset($POST['effect3'])){
-          exec("sudo python ");
-        }
-        if (isset($POST['effect4'])){
-          exec("sudo python ");
-        }
-        if (isset($POST['effect5'])){
-          exec("sudo python ");
-        }
-
-<!--         if (isset($POST['effect'])){
-          exec("sudo python ");
-        } -->
-
-
-      ?>
-   
-  <form method="post">
-
-    
-
-      <!-- photo -->
-      <img class="image" src="img/bauble-darkblue.png" alt="" width="205" height="194">
-
-      <!-- Switch -->
-      <div class="switchIO">
-          <h5>AAN/UIT</h5>
-          <label class="switch">
+    <!-- Switch -->
+    <div class="switchIO">
+      <h5>AAN/UIT</h5>
+      <label class="switch">
               <input type="checkbox" name="checkbox">
               <span class="slider round"></span>
           </label>
-      </div>
-
-      <!-- color picker -->
-      <div class="color-picker">
-        <form>
-            <input type="text" id="color" name="color" value="#123456" />
-        </form>
-
-        <div id="colorpicker"></div>
     </div>
 
-      <!-- Effect -->
-      <div class='select-ctr'>
-        <div class='selected-input input-preview'>Kies een effect</div>
-        <div class='input input-1' data-val='geen' name="effect1">Geen</div>
-        <div class='input input-2' data-val='flikkeren' name="effect2">Flikkeren</div>
-        <div class='input input-3' data-val='traag-flikkeren' name="effect3">Traag Flikkeren</div>
-        <div class='input input-4' data-val='regenboog' name="effect4">Regenboog</div>
-        <div class='input input-5' data-val='2kleuren' name="effect5">2 Kleuren</div>
-  </div>
+    <!-- color picker -->
+    <div class="color-picker">
+      <form>
+        <input type="text" id="color" name="color" value="#123456" />
+      </form>
+      <div id="colorpicker"></div>
+    </div>
+
+    <!-- Effect -->
+    <!-- <div class='select-ctr'>
+      <div class='selected-input input-preview'>Kies een effect</div>
+      <div class='input input-1' data-val='geen' name="effect1">Geen</div>
+      <div class='input input-2' data-val='flikkeren' name="effect2">Flikkeren</div>
+      <div class='input input-3' data-val='traag-flikkeren' name="effect3">Traag Flikkeren</div>
+      <div class='input input-4' data-val='regenboog' name="effect4">Regenboog</div>
+      <div class='input input-5' data-val='2kleuren' name="effect5">2 Kleuren</div>
+    </div> -->
 
 
-  <select class="effect" name="effect">
+    <select class="effect" name="effect">
       <option value="effect1">geen</option>
       <option value="effect2">flikkeren</option>
       <option value="effect3">traag flikkeren</option>
       <option value="effect4">regenboog</option>
       <option value="effect5">2kleuren</option>
-  </select>
+    </select>
 
-</form>
+    <input type="submit" name="submit" value="Set leds">
+  </form>
 
 
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/TextPlugin.min.js'></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/TextPlugin.min.js'></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
 
-        $(document).ready(function() {
-      
-          $('#colorpicker').farbtastic('#color');
-      
-        });
-      
-      </script>
-  </body>
+      $('#colorpicker').farbtastic('#color');
+
+    });
+  </script>
+</body>
+
 </html>
