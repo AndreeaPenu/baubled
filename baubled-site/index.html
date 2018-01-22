@@ -74,6 +74,7 @@
           $.ajax({
             cache: false,
             type: 'POST',
+            async: false,
             url: '/control.php',
             data: $('#baubled-form').serialize(),
             success: function () {
