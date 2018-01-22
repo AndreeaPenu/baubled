@@ -40,7 +40,7 @@ def dragColorReverse(strip, color):
         time.sleep(0.05)
         showColor(strip, i, 0)
 
-def blink(strip, color, rate=50):
+def blink(strip, color, rate=250):
     for i in range(strip.numPixels()):
         strip.setPixelColor(i, color)
     strip.show()
@@ -115,12 +115,12 @@ if __name__ == '__main__':
     parser.add_argument('-o', '--on', help='specify enabled/disabled')
 
     args = parser.parse_args()
-    color = args.color
     effect = args.effect
     status = args.on
-
-    h = args.color.lstrip('#')
-    color = Color(tuple(int(h[i:i+2], 16) for i in (0, 2 ,4)))
+    if args.color != None:
+        c = args.color.lstrip('#')
+        colorTuple = tuple(int(c[i:i+2], 16) for i in (0, 2 ,4))
+        color = Color(colorTuple[0], colorTuple[1], colorTuple[2])
 
     # Create NeoPixel object with appropriate configuration.
     strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ,
