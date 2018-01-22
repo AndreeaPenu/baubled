@@ -40,7 +40,7 @@ def dragColorReverse(strip, color):
         time.sleep(0.05)
         showColor(strip, i, 0)
 
-def blink(strip, color, rate=50):
+def blink(strip, color, rate=250):
     for i in range(strip.numPixels()):
         strip.setPixelColor(i, color)
     strip.show()
