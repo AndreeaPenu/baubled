@@ -1,9 +1,3 @@
-<?php
-
-  if($_POST['checkbox'])
-?>
-
-<?php echo $_POST['checkbox'] ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,6 +5,7 @@
     <title>Control</title>
   </head>
   <body>
+    <?php echo $_POST['checkbox'] ?>
 
   </body>
 </html>
