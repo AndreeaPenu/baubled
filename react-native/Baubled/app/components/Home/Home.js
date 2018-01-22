@@ -11,7 +11,7 @@ export default class Home extends React.Component {
     render() {
         return (
             <View style={styles.screen}>
-                <Image style={styles.image} source={require('./bauble.png')} />
+                <Image style={styles.image} source={require('./bauble-darkblue.png')} />
                 <Text>
                   
                 </Text>
@@ -49,7 +49,7 @@ AppRegistry.registerComponent('Home',()=>Home);
 
 const styles = StyleSheet.create({
     screen: {
-        backgroundColor: '#b4e5ed',
+        backgroundColor: '#1b2c44',
         height: Dimensions.get('window').height,
         width: Dimensions.get('window').width
     },

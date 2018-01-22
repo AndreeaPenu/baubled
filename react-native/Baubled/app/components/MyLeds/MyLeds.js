@@ -22,8 +22,8 @@ export default class MyLeds extends React.Component {
         super();
         //this.manager = new BleManager();
         this.state = {
-            switchValue:false,
-            effect: 'geen',
+            //switchValue:false,
+            //effect: 'geen',
             //scanning:false,
            // peripherals: new Map(),
         }
@@ -31,7 +31,7 @@ export default class MyLeds extends React.Component {
     }
 
     componentDidMount(){
-      BleManager.start({showAlert: false});
+     // BleManager.start({showAlert: false});
     }
     
 /*     scanAndConnect() {
