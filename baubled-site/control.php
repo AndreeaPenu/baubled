@@ -7,7 +7,7 @@
   <body>
     <?php $c =  $_POST['checkbox'] ?>
     <?php if(isset($c)): ?>
-      <p>Set</p>
+      <p>Set: <?= $c ?></p>
     <?php endif ?>
   </body>
 </html>
