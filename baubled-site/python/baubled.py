@@ -115,12 +115,12 @@ if __name__ == '__main__':
     parser.add_argument('-o', '--on', help='specify enabled/disabled')
 
     args = parser.parse_args()
-    color = args.color
     effect = args.effect
     status = args.on
 
-    h = args.color.lstrip('#')
-    color = Color(int(h[i:i+2], 16 for i in (0, 2 ,4)))
+    c = args.color.lstrip('#')
+    colorTuple = tuple(int(h[i:i+2], 16) for i in (0, 2 ,4))
+    color = Color(colorTuple[0], colorTuple[1], colorTuple[3])
 
     # Create NeoPixel object with appropriate configuration.
     strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ,
