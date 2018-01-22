@@ -1,3 +1,4 @@
+<?php $c =  $_POST['checkbox'] ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,7 +6,8 @@
     <title>Control</title>
   </head>
   <body>
-    <?php echo $_POST['checkbox'] ?>
-
+    <?php if(isset($c)): ?>
+      <p>Set</p>
+    <?php endif ?>
   </body>
 </html>
