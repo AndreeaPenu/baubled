@@ -120,7 +120,7 @@ if __name__ == '__main__':
     status = args.on
 
     h = args.color.lstrip('#')
-    color = Color(tuple(int(h[i:i+2], 16) for i in (0, 2 ,4)))
+    color = Color(int(h[i:i+2], 16 for i in (0, 2 ,4)))
 
     # Create NeoPixel object with appropriate configuration.
     strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ,
