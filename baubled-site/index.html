@@ -23,42 +23,33 @@
 
   <form method="POST" action='control.php'>
 
-    <input type="checkbox" name="checkbox" value='on'>
 
     <!-- Switch -->
-    <!-- <div class="switchIO">
+    <div class="switchIO">
       <h5>AAN/UIT</h5>
       <label class="switch">
+              <input type="checkbox" name="checkbox">
               <span class="slider round"></span>
       </label>
-    </div> -->
+    </div>
 
     <!-- color picker -->
-    <!-- <div class="color-picker">
+    <div class="color-picker">
       <form>
         <input type="text" id="color" name="color" value="#123456" />
       </form>
       <div id="colorpicker"></div>
-    </div> -->
+    </div>
 
     <!-- Effect -->
-    <!-- <div class='select-ctr'>
+    <div class='select-ctr'>
       <div class='selected-input input-preview'>Kies een effect</div>
       <div class='input input-1' data-val='geen' name="effect1">Geen</div>
       <div class='input input-2' data-val='flikkeren' name="effect2">Flikkeren</div>
       <div class='input input-3' data-val='traag-flikkeren' name="effect3">Traag Flikkeren</div>
       <div class='input input-4' data-val='regenboog' name="effect4">Regenboog</div>
       <div class='input input-5' data-val='2kleuren' name="effect5">2 Kleuren</div>
-    </div> -->
-
-
-    <select class="effect" name="effect">
-      <option value="effect1">geen</option>
-      <option value="effect2">flikkeren</option>
-      <option value="effect3">traag flikkeren</option>
-      <option value="effect4">regenboog</option>
-      <option value="effect5">2kleuren</option>
-    </select>
+    </div>
 
     <input type="submit" name="submit" value="Set leds">
   </form>
