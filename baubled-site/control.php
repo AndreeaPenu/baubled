@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Control</title>
-  </head>
-  <body>
-    <?php echo $_POST['checkbox'] ?>
-
-  </body>
-</html>
+<?php
+  $cmd = 'sudo python python/baubled.py';
+  if(isset($_GET['checkbox'])){
+    $cmd .= ' -c '$_GET['checkbox'];
+  }
+  if(isset($_GET['effect'])){
+    $cmd .= ' -e ' . $_GET['effect'];
+  }
+  if(isset($_GET['color'])){
+    $cmd .= ' -c ' . $_GET['color'];
+  }
+  exec($cmd);
