@@ -4,7 +4,7 @@
   font-family: 'Roboto';
 }
 body{
-  background-color:#B4E5ED;
+  background-color:#1b2c44;
 }
 h2, h5 {
     font-family: 'Roboto';
@@ -14,12 +14,12 @@ h2, h5 {
 .image {
   position: absolute;
   top: 10%;
-  left: 22%;
+  left: 25%;
 }
 .switchIO {
   position: absolute;
   top: 42%;
-  left: 40.5%;
+  left: 43.5%;
 }
 
 .color-picker {
