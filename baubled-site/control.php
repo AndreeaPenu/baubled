@@ -5,8 +5,6 @@
     <title>Control</title>
   </head>
   <body>
-    <?php if(isset($_POST['checkbox'])): ?>
-      <p>Set: <?= $_POST['checkbox']  ?></p>
-    <?php endif ?>
+    <?php var_dump($_POST) ?>
   </body>
 </html>
