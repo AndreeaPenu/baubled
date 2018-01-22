@@ -1,31 +1,50 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 
-*{
+* {
   font-family: 'Roboto';
 }
-body{
+body {
   background-color:#1b2c44;
+  height: 100%;
+  font-size: 16px;
 }
+
 h2, h5 {
-    font-family: 'Roboto';
-    color: white;
+  font-family: 'Roboto';
+  color: white;
+}
+
+.effect {
+  position: absolute;
+  top: 160%;
+  left: 50%;
+}
+
+#color {
+  width: 100%;
+  padding: 10px 9px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .image {
   position: absolute;
   top: 10%;
-  left: 25%;
+  left: 17%;
 }
+
 .switchIO {
   position: absolute;
-  top: 42%;
-  left: 43.5%;
+  top: 47%;
+  left: 41.5%;
 }
 
 .color-picker {
   position: absolute;
-  top: 57%;
-  left: 26%;
+  top: 66%;
+  left: 21%;
 }
 
 #pick-color {
@@ -118,24 +137,6 @@ input:checked + .slider:before {
 }
 
 /* farbtastic */
-/**
- * Farbtastic Color Picker 1.2
- * © 2008 Steven Wittens
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
- */
  .farbtastic {
   position: relative;
 }
@@ -170,15 +171,9 @@ input:checked + .slider:before {
 }
 
 /* Picker */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
-body {
-  height: 100%;
-  font-size: 16px;
-}
-
 .select-ctr {
   position: absolute;
-  top: 125%;
+  top: 147%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -187,7 +182,6 @@ body {
   transform: translate(-50%, -50%);
   width: 350px;
   height: 370px;
-  font-family: "Roboto";
 }
 .select-ctr > div {
   padding: 15px 20px;
