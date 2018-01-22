@@ -120,6 +120,7 @@ if __name__ == '__main__':
 
     c = args.color.lstrip('#')
     colorTuple = tuple(int(c[i:i+2], 16) for i in (0, 2 ,4))
+    print(colorTuple)
     color = Color(colorTuple[0], colorTuple[1], colorTuple[3])
 
     # Create NeoPixel object with appropriate configuration.
