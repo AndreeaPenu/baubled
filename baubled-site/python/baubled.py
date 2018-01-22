@@ -2,7 +2,7 @@ from neopixel import *
 import _rpi_ws281x as ws
 import time
 import math
-import bluetooth
+import argparse
 
 
 # LED strip configuration:
@@ -22,6 +22,10 @@ def showColor(strip, pixel, color):
     strip.setPixelColor(pixel, color)
     strip.show()
 
+def turnOff(strip):
+    for i in range(strip.numPixels()):
+        strip.setPixelColor(i, 0)
+    strip.show()
 
 def dragColor(strip, color):
     for i in range(strip.numPixels()):
@@ -36,6 +40,15 @@ def dragColorReverse(strip, color):
         time.sleep(0.05)
         showColor(strip, i, 0)
 
+def blink(strip, color, rate=50):
+    for i in range(strip.numPixels()):
+        strip.setPixelColor(i, color)
+    strip.show()
+    time.sleep(rate/1000)
+    for i in range(strip.numPixels()):
+        strip.setPixelColor(i, 0)
+    strip.show()
+    time.sleep(rate/1000)
 
 def bounce(strip, color):
     for i in range(2):
@@ -96,29 +109,29 @@ def rainbowCycle(strip, wait_ms=20, iterations=5):
         time.sleep(wait_ms / 1000.0)
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Control leds from baubled')
+    parser.add_argument('-c', '--color', help='specify color')
+    parser.add_argument('-e', '--effect', help='specify effect')
+    parser.add_argument('-o', '--on', help='specify enabled/disabled')
+
+    args = parser.parse_args()
+    color = args.color
+    effect = args.effect
+    status = args.on
+
+    h = args.color.lstrip('#')
+    color = Color(tuple(int(h[i:i+2], 16) for i in (0, 2 ,4)))
+
     # Create NeoPixel object with appropriate configuration.
     strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ,
                               LED_DMA, LED_INVERT, LED_BRIGHTNESS, LED_CHANNEL, LED_STRIP)
     # Intialize the library (must be called once before other functions).
     strip.begin()
     while True:
-   	 server_sock = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
-	 port = 1
-	 server_sock.bind(('', port))
-	server_sock.listen(1)
-    
-     client_sock, address = server_sock.accept()
-     print 'Accepted connection from ', address
-     while True:
-         data = client_sock.recv(1024)
-    
-         if data == 'r':
-             rainbow(strip)
-         elif data == 'b':
-             bounce(strip, Color(255,128,128))
-         elif data == 'e':
-             print('Exit')
-             break
-    
-     client_sock.close()
-     server_sock.close()
+        if status:
+            if effect =='flikker':
+                blink(strip, color)
+            elif effect == 'rainbow':
+                rainbow(strip)
+        else:
+            turnOff(strip)
