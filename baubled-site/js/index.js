@@ -84,7 +84,7 @@ $(document).ready(function() {
   });
   
   // copy
-  balapaCop("Select Input Interaction", "rgba(255,255,255,.5)");
+ // balapaCop("Select Input Interaction", "rgba(255,255,255,.5)");
 });
 
 /**
